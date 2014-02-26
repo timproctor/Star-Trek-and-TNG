@@ -18,10 +18,11 @@ class AwayTeams
     
     away_team = away_team_pairs.shuffle.first
     
-  	  puts "Computer, who should go on the away-team?"
-  	  puts "\n"
-  	  puts "Computer responds with: " "\n" "#{away_team[0]} and #{away_team[1]} should go on the mission."
+  	puts "Computer, who should go on the away-team?"
+  	puts "\n"
+  	puts "Computer responds with: " "\n" "#{away_team[0]} and #{away_team[1]} should go on the mission."
   end
+  
 end
 
 mission = AwayTeams.new
