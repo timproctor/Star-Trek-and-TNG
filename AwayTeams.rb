@@ -15,11 +15,10 @@ class AwayTeams
 
     remove_mirror_pairs = with_mirror_pairs.collect {|pair| pair.sort}
     away_team_pairs = remove_mirror_pairs.uniq
-  
+    
+    away_team = away_team_pairs.shuffle.first
+    
   	  puts "Computer, who should go on the away-team?"
-  	
-  	away_team = away_team_pairs.shuffle.first
-  	
   	  puts "\n"
   	  puts "Computer responds with: " "\n" "#{away_team[0]} and #{away_team[1]} should go on the mission."
   end
